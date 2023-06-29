@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">FreeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <fieldset class="field">
+            <form id="survey-form">
+                <div>
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" required type="text" placeholder="Enter your name" name="name">
+                </div>
+                <div>
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" required type="email" placeholder="Enter your email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+" name="email">
+                </div>
+                <div>
+                    <label id="number-label" for="number">Age(optional)</label>
+                    <input id="number" type="number" placeholder="Age" min="12" max="50" name="number">
+                </div>
+                <div>
+                    <p>Which option best describes your current role?</p>
+
+                    <select id="dropdown" name="selection">
+                        <option>Select Current Role</option>
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+
+                    </select>
+                </div>
+                <p>Would you recommend freeCodeCamp to a friend?
+
+                </p>
+                <div>
+                    <input type="radio" id="radio_options" name="radio_options" value="definitely">
+                    <label for="radio_options">Definitely</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio_options" name="radio_options" value="maybe">
+                    <label for="radio_options">Maybe</label>
+                </div>
+                <div><input type="radio" id="radio_options" name="radio_options" value="not sure">
+                    <label for="radio_options">Not Sure</label>
+                </div>
+                </div>
+                <div>
+                    <p>What would you like to see improved? (Check all that apply)
+
+                    </p>
+                    <div>
+                        <input type="checkbox" id="check" name="check" value="frontend">
+                        <label>Front-End Projects</label>
+                    </div>
+                    <div><input type="checkbox" id="check" name="check" value="backend">
+                        <label>Back-End Projects</label>
+                    </div>
+                    <div><input type="checkbox" id="check" name="check" value="fullstack">
+                        <label>Full Stack Projects</label>
+                    </div>
+                </div>
+                <p>Any Comments or Suggestions?</p>
+                <textarea class="text">Enter your comment here...</textarea>
+                <div>
+                    <button id="submit">Submit</button>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+</body>
+
+</html>
